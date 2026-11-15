@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Skolappar – varumärkesguide</title>
+<meta name="description" content="Skolappar: designsystem för pedagogiska appar. Ett varmt papper, en tydlig färg, stora händer." />
+<style>
+:root{
+  --paper:#faf7f2;--paper-sunken:#f3eee6;--card:#fff;--ink:#14181f;--ink-soft:#2c3340;
+  --muted:#5b6472;--line:#e7e2d9;
+  --matte:#2563eb;--las:#d6367f;--eng:#0e9488;--no:#16a34a;--so:#e2662a;--kod:#7c3aed;--lek:#f0a500;
+  --ok:#15803d;--ok-soft:#e8f7ee;--err:#b91c1c;--err-soft:#fdeceb;
+  --r-card:24px;--r-btn:16px;--r-pill:999px;--r-tile:28%;
+  --shadow-1:0 1px 2px rgb(20 24 31/.06);--shadow-2:0 10px 30px -14px rgb(20 24 31/.28);
+  --font-ui:"Inter",system-ui,-apple-system,"Segoe UI",sans-serif;
+}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--font-ui);font-size:17px;line-height:1.55}
+.wrap{max-width:46rem;margin:0 auto;padding:48px 24px 80px}
+.hero{display:flex;gap:16px;align-items:center;margin-bottom:8px}
+.tile{display:grid;place-items:center;width:52px;height:52px;border-radius:var(--r-tile);background:var(--matte);color:#fff;font-weight:800;font-size:22px;box-shadow:var(--shadow-2)}
+h1{font-size:2.4rem;font-weight:800;letter-spacing:-.02em;margin:0}
+h2{font-size:1.5rem;font-weight:800;letter-spacing:-.01em;margin:44px 0 12px}
+p{color:var(--ink-soft)}
+.muted{color:var(--muted)}
+.card{background:var(--card);border-radius:var(--r-card);box-shadow:var(--shadow-1),inset 0 0 0 1px var(--line);padding:20px}
+.grid{display:grid;gap:16px}
+.cols2{grid-template-columns:repeat(2,1fr)}
+.cols3{grid-template-columns:repeat(3,1fr)}
+@media(max-width:640px){.cols3{grid-template-columns:repeat(2,1fr)}}
+.chip{display:inline-flex;align-items:center;gap:6px;padding:6px 14px;border-radius:var(--r-pill);font-weight:600;font-size:14px}
+.swatch{border-radius:14px;height:72px;display:flex;align-items:flex-end;padding:10px;color:#fff;font-size:12px;font-weight:700;box-shadow:var(--shadow-1)}
+.swatch.dark{color:var(--ink)}
+.demo{display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+button.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:52px;padding:0 20px;border:0;border-radius:var(--r-btn);font:600 16px/1 var(--font-ui);cursor:pointer;transition:transform .12s ease-out}
+button.btn:active{transform:scale(.98)}
+.btn-acc{color:#fff;background:var(--matte);box-shadow:var(--shadow-2)}
+.btn-ghost{color:var(--ink);background:var(--card);box-shadow:var(--shadow-1),inset 0 0 0 1px var(--line)}
+.icons{display:flex;gap:14px;flex-wrap:wrap}
+.ic{width:72px;height:72px;border-radius:18px;overflow:hidden;box-shadow:var(--shadow-2)}
+table{width:100%;border-collapse:collapse;font-size:15px}
+th,td{text-align:left;padding:10px 8px;border-bottom:1px solid var(--line)}
+th{color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.06em}
+.donot{background:var(--err-soft);color:var(--err);border-radius:var(--r-card);padding:14px 16px;font-weight:600}
+.doyes{background:var(--ok-soft);color:var(--ok);border-radius:var(--r-card);padding:14px 16px;font-weight:600}
+ul{color:var(--ink-soft);padding-left:22px;margin:8px 0}
+li{margin:6px 0}
+code{background:var(--paper-sunken);padding:2px 7px;border-radius:8px;font-size:.9em;color:var(--ink-soft)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="hero">
+    <div class="tile">S</div>
+    <div>
+      <h1>Skolappar</h1>
+      <p class="muted" style="margin:0">Varumärkesguide v1.0</p>
+    </div>
+  </div>
+
+  <p style="font-size:1.15rem;color:var(--ink);font-weight:600;max-width:32rem">
+    Ett varmt papper, en tydlig färg, stora händer. Inget blink, inga skrikkänningar,
+    ingen spelhall – apparna ska kännas som ett bra arbetshäfte.
+  </p>
+
+  <h2>Familjen</h2>
+  <div class="icons">
+    <img class="ic" src="ikoner/matte/icon-192.png" alt="Matematik" />
+    <img class="ic" src="ikoner/las/icon-192.png" alt="Svenska" />
+    <img class="ic" src="ikoner/eng/icon-192.png" alt="Språk" />
+    <img class="ic" src="ikoner/no/icon-192.png" alt="NO" />
+    <img class="ic" src="ikoner/so/icon-192.png" alt="SO" />
+    <img class="ic" src="ikoner/kod/icon-192.png" alt="Kod" />
+    <img class="ic" src="ikoner/lek/icon-192.png" alt="Lek" />
+  </div>
+  <p class="muted" style="margin-top:12px">Samma platta, samma prick uppe till höger, olika färg per ämne. Pricken är familjetecknet.</p>
+
+  <h2>Färg</h2>
+  <div class="grid cols3">
+    <div class="swatch dark" style="background:var(--paper)">Papper #faf7f2</div>
+    <div class="swatch" style="background:var(--ink)">Bläck #14181f</div>
+    <div class="swatch dark" style="background:var(--line)">Linje #e7e2d9</div>
+    <div class="swatch" style="background:var(--matte)">Matte #2563eb</div>
+    <div class="swatch" style="background:var(--las)">Svenska #d6367f</div>
+    <div class="swatch" style="background:var(--eng)">Språk #0e9488</div>
+    <div class="swatch" style="background:var(--no)">NO #16a34a</div>
+    <div class="swatch" style="background:var(--so)">SO #e2662a</div>
+    <div class="swatch" style="background:var(--kod)">Kod #7c3aed</div>
+  </div>
+  <p class="muted">En app använder ett accent och håller sig till det. Accent blir aldrig textfärg på papper under 20&nbsp;px.</p>
+
+  <h2>Typografi</h2>
+  <div class="card">
+    <p style="font-size:2.4rem;font-weight:800;letter-spacing:-.02em;margin:0">Skärmtitel 28–40</p>
+    <p style="font-size:1.5rem;font-weight:700;margin:4px 0">Sektionsrubrik 20</p>
+    <p style="margin:4px 0">Brödtext 16 – en rad är max 60 tecken på iPad.</p>
+    <p class="muted" style="font-size:14px;margin:4px 0">Sekundär text 14</p>
+    <p style="font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);margin:4px 0">Etikett 12</p>
+  </div>
+  <p class="muted">Inter, bundlat lokalt via <code>@fontsource/inter</code>. Inga Google Fonts. Siffror i poäng och tid i tabular-nums.</p>
+
+  <h2>Form och knappar</h2>
+  <div class="demo">
+    <button class="btn btn-acc">Primär knapp</button>
+    <button class="btn btn-ghost">Sekundär knapp</button>
+    <span class="chip" style="background:color-mix(in srgb,var(--matte) 12%,transparent);color:var(--matte)">Piller</span>
+  </div>
+  <table>
+    <tr><th>Element</th><th>Radie</th></tr>
+    <tr><td>Kort</td><td>24 px</td></tr>
+    <tr><td>Knapp</td><td>16 px</td></tr>
+    <tr><td>Piller</td><td>999 px</td></tr>
+    <tr><td>Ikonplatta</td><td>28 %</td></tr>
+  </table>
+
+  <h2>Touch och iPad</h2>
+  <div class="card">
+    <ul>
+      <li>Minsta träffyta <strong>52×52&nbsp;px</strong>, minst 12&nbsp;px mellan träffytor.</li>
+      <li>Ingen <code>user-scalable=no</code>, ingen dubbeltryck-zoom.</li>
+      <li>Ingen hover-only information.</li>
+      <li>Drag-och-släpp får ha ett tryck-alternativ.</li>
+      <li>Både landskap och porträtt, ingen sidledscrollning.</li>
+      <li>Ljud är opt-in, inget ljud före första trycket.</li>
+    </ul>
+  </div>
+
+  <h2>Röst</h2>
+  <div class="grid cols2">
+    <div class="doyes">Till barnet: kort, konkret. “Dra bokstaven till ordet.”</div>
+    <div class="donot">Fel ska aldrig heta “Fel!”. Det ska heta “Nästan! Titta på den första bokstaven.”</div>
+  </div>
+
+  <h2>Checklista före publicering</h2>
+  <div class="card">
+    <ul>
+      <li>Ikoner + <code>og.png</code> genererade med <code>icon.py</code>.</li>
+      <li>Alla träffytor ≥ 52&nbsp;px, testade i 1024×768 och 390×844.</li>
+      <li>Ingen horisontell scroll i någon vy.</li>
+      <li><code>&lt;meta name="theme-color"&gt;</code> = accent, <code>lang="sv"</code>, JSON-LD på plats.</li>
+      <li>Fotrad: <em>Gratis · ingen inloggning · fungerar på iPad</em>.</li>
+      <li>Spelat igenom på iPad-mått och på mobil.</li>
+    </ul>
+  </div>
+
+  <p class="muted" style="margin-top:40px;font-size:14px">
+    Skolappar · öppen källkod · inga konton, ingen spårning. Full text i <code>BRAND.md</code> och <code>tokens.css</code>.
+  </p>
+</div>
+</body>
+</html>
